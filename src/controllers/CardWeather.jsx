@@ -67,12 +67,12 @@ const CardWeather = ({ lat, lon }) => {
                         </div>
                         <img src={isTime ? dayImage : nightImage} alt="xx" />
                     </div>
-
+                    
                     <div className='Card__body'>
                         <h2>{isCelsius ? temperature?.celsius : temperature?.fahrenheit}</h2>
                         <img src={weather && `http://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`} alt="cloud" />
 
-
+                       
                     </div>
                     <div className='Card__footer'>
                         <h3>&#34;{weather?.weather[0].description}&#34; </h3>
@@ -81,9 +81,6 @@ const CardWeather = ({ lat, lon }) => {
                             <li><span> ☁ Clouds </span>{weather?.clouds.all}</li>
                             <li><span> 🌡 Pressure </span>{weather?.main.pressure}</li>
                         </ul>
-                    </div>
-                    <div>
-
                     </div>
                     <div className='Card__btn'>
                         <button onClick={handleCLick}> {isCelsius ? 'Change to F' : 'Change to C'}</button>

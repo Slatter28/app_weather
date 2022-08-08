@@ -11,8 +11,6 @@ const Sun = () => {
                 <div className="circle2"></div>
                 <div className="circle3"></div>
             </div>
-            <div className="ground1 ground1_sunny"></div>
-            <div className="ground2 ground2_sunny"></div>
         </div>
     )
 }
